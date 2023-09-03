@@ -15,7 +15,7 @@ function Formulario(props){
         e.preventDefault();
         let auxDia = dia<10 ? "0"+dia : dia;
         let fechaN = anio+"-"+mes+"-"+auxDia;
-        let url = "http://127.0.0.1:8000/datos/"+fechaN;
+        let url = "http://150.230.40.105/datos/"+fechaN;
         const res = await fetch(url);
         const datosRespuesta = await res.json();
         console.log(datosRespuesta["fecha"]);

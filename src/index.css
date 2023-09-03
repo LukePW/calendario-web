@@ -89,3 +89,13 @@ input, select{
 .MuiFormLabel-asterisk{
   color:blue;
 }
+
+@media (prefers-color-scheme: dark) {
+  label{
+    color: white;
+  }
+
+  #campoAnio, #campoMes, #campoDia{
+    background-color: white;
+  }
+}
